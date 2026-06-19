@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЧасовойМастер — Профиль</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">⌚ <span>Часовой</span>Мастер</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="booking.html">Запись</a></li>
+                <li><a href="orders.html">Мои записи</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <h2 class="section-title">Профиль</h2>
+
+            <!-- Блок авторизации (показывается если не вошли) -->
+            <div id="authSection">
+
+                <div class="profile-tabs">
+                    <button class="tab-btn active" data-tab="tab-register">Регистрация</button>
+                    <button class="tab-btn" data-tab="tab-login">Войти</button>
+                </div>
+
+                <!-- Вкладка регистрации -->
+                <div class="tab-content active" id="tab-register">
+                    <div class="form-block">
+                        <h2>Создать аккаунт</h2>
+                        <form id="registerForm">
+                            <div class="form-group">
+                                <label for="regName">Имя *</label>
+                                <input type="text" id="regName" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <label for="regEmail">Email *</label>
+                                <input type="email" id="regEmail" placeholder="example@mail.ru">
+                            </div>
+                            <div class="form-group">
+                                <label for="regPassword">Пароль *</label>
+                                <input type="password" id="regPassword" placeholder="Придумайте пароль">
+                            </div>
+                            <button type="submit" class="btn btn-full">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Вкладка входа -->
+                <div class="tab-content" id="tab-login">
+                    <div class="form-block">
+                        <h2>Вход в аккаунт</h2>
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="loginEmail">Email *</label>
+                                <input type="email" id="loginEmail" placeholder="example@mail.ru">
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword">Пароль *</label>
+                                <input type="password" id="loginPassword" placeholder="Ваш пароль">
+                            </div>
+                            <button type="submit" class="btn btn-full">Войти</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Профиль (показывается после входа) -->
+            <div id="profileSection" class="profile-hidden">
+
+                <div class="form-block">
+                    <h2>Мои данные</h2>
+                    <form id="editProfileForm">
+                        <div class="form-group">
+                            <label for="profileName">Имя</label>
+                            <input type="text" id="profileName">
+                        </div>
+                        <div class="form-group">
+                            <label for="profileEmail">Email</label>
+                            <input type="email" id="profileEmail">
+                        </div>
+                        <div class="profile-buttons">
+                            <button type="submit" class="btn">Сохранить</button>
+                            <button type="button" id="logoutBtn" class="btn btn-outline">Выйти</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 ЧасовойМастер. Все права защищены.</p>
+    </footer>
+
+    <script src="src/js/main.js" defer></script>
+</body>
+
+</html>

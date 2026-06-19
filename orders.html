@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЧасовойМастер — Мои записи</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo"><span>Часовой</span>Мастер</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="booking.html">Запись</a></li>
+                <li><a href="orders.html">Мои записи</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+
+            <h2 class="section-title">Мои записи</h2>
+
+            <p class="orders-subtitle">
+                Здесь отображаются все ваши заявки и их текущий статус.
+            </p>
+
+            <div class="orders-list" id="ordersList">
+                <!-- Load in JS -->
+            </div>
+
+            <br>
+
+            <div class="orders-new-btn">
+                <a href="booking.html" class="btn">+ Новая запись</a>
+            </div>
+
+            <br>
+            <div class="status-legend">
+                <h3>Статусы заявок</h3>
+                <div class="status-legend-items">
+                    <span class="status status-pending">Ожидает подтверждения</span>
+                    <span class="status status-inwork">В работе</span>
+                    <span class="status status-done">Выполнено</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>© 2026 ЧасовойМастер. Все права защищены.</p>
+    </footer>
+
+    <script src="src/js/main.js" defer></script>
+</body>
+
+</html>
